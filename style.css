@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
 .text-left{
     text-align: left;
 }
@@ -29,19 +32,17 @@ a{
     text-decoration: none;
 }
 .mid-content{
-    max-width: 1300px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0px 30px;
 }
 
 .p-bg{
     background-color:#f7f9ff;
 }
 
-/*  Begain main css  */
-body,h1,h2,h3,h4,h5,h6,p,a,span{
-    font-family: 'Work Sans', sans-serif;
-}
-
+/* =========================
+ Header-Section 
+===========================*/
 .header-section {
 	background-color: #fff;
 	border-bottom: 1px solid #ddd;
@@ -96,7 +97,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     line-height: 60px;
 }
 
-/*  DropDown Mneu css  */
+/*  =======================
+Header-DropDown 
+========================== */
 .primary-menu ul li{
     position: relative;
 }
@@ -122,7 +125,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 
 
-/* Banner CSS */
+/* =========================
+Banner-Section 
+============================*/
 .banner-section {
 	background: url(assets/banner.jpeg) no-repeat center center;
 	background-size: cover;
@@ -144,14 +149,13 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     z-index: -1;
 }
 .banner-content h3 {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
 }
 .banner-content h2 {
-    font-size: 60px;
-    margin: 30px 0;
+    font-size: 50px;
+    margin: 10px 0;
 }
-
 .default-btn {
 	color: #7d7d7d;
 	padding: 20px 30px;
@@ -169,7 +173,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     color: #fff;
 }
 
-/*  Banner Section  */
+/*  ========================
+Video-Content-Section
+========================== */
 .banner-bottom{
     background: #f7f9ff;
     padding: 100px 0;
@@ -181,7 +187,7 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     width: 48%;
 }
 .video-content-right h3 {
-    font-size: 51px;
+    font-size: 45px;
     font-weight: 400;
     margin-bottom: 35px;
 }
@@ -191,14 +197,16 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     line-height: 1.7em;
 }
 
-/*  Servcie Section  */
+/* ============================
+ Servcie-Section 
+ ============================= */
 .service-section{
     background: #fff;
     padding: 100px 0;
 }
-
 .section-title h1 {
-    font-size: 64px;
+    font-size: 58px;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 .section-title p {
@@ -206,8 +214,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     font-size: 26px;
     font-weight: 300;
 }
-
-/*  Serice Item  */
 .services-items {
     margin-top: 90px;
 }
@@ -234,17 +240,19 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     margin-top: 8px;
 }
 .s-content h3 {
-    font-size: 23px;
+    font-size: 26px;
     font-weight: 500;
     margin-bottom: 30px;
 }
 .s-content p {
     color: #767676;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6em;
 }
 
-/*  Pricing table css  */
+/*  ==================================
+Pricing-Table-Section 
+===================================== */
 .pricing-table-section{
     background: #f7f9ff;
     padding: 50px;
@@ -266,7 +274,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .pricing-table-item:nth-child(3){
     margin-right: 0;
 }
-
 .p-heading{
     padding: 30px;
     border-bottom: 1px solid #ddd;
@@ -275,7 +282,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .p-content{
     padding: 30px;
 }
-
 .p-heading h4 {
     font-size: 25px;
     font-weight: 500;
@@ -296,7 +302,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     font-size: 20px;
     line-height: 1.5em;
 }
-
 .p-content ul{
     list-style: none;
 }
@@ -317,8 +322,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .p-button .default-btn{
     box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
 }
-
-
 .pricing-table-item:hover .p-heading{
     background: #6278df;
     color: #fff;
@@ -328,7 +331,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     color: #fff;
 }
 
-
+/* ==========================
+Team-Section
+=========================== */
 .team-section{
     padding: 100px 0;
 }
@@ -362,15 +367,15 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 
 
-/*   Newlatter css */
+/* ==========================
+ Newsletter 
+ ===========================*/
 .newslatter-section{
     padding: 100px 0;
 }
-
 .newslatter-from {
     margin-top: 60px;
 }   
-
 .default-input {
     width: 350px;
     padding: 20px 15px;
@@ -412,7 +417,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 
 
-/*  Blog Section CSS  */
+/* =============================
+ Blog-Section 
+ ============================= */
 .blog-section{
     padding: 100px 0;
     padding-top: 20px;
@@ -420,7 +427,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .blog-title {
     padding: 60px 0px;
 }
-
 .b-hading{
     width: 50%;
 }
@@ -448,7 +454,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     background: #fff;
     box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2); 
 }
-
 .blog-post-content {
     margin-top: 26px;
 }
@@ -464,14 +469,15 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 
 
-/*  Testimonial section  */
+/*  ==========================
+Testimonial-Section 
+============================ */
 .testimonial-section{
     padding: 100px 0;
 }
 .testimonial-items{
     margin-top: 100px;
 }
-
 .i-item{
     width: 32%;
     margin-right: 2%;
@@ -479,7 +485,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .i-item:last-child{
     margin-right: 0;
 }
-
 .t-content{
     background: #fff;
     box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2); 
@@ -518,7 +523,6 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 	left: -17px;
 	top: -4px;
 }
-
 .t-user-bio {
     position: relative;
     top: 13px;
@@ -544,7 +548,9 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     margin-right: 24px;
 }
 
-
+/* =====================
+Sub-Footer
+======================= */
 .contact-section {
     padding-top: 80px;
 }
@@ -555,21 +561,12 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
     width: 48%;
     margin-top: 40px;
 }
-
-.footer {
-    padding: 20px 0;
-    margin-top: 60px;
-}
-.footer p {
-    font-size: 20px;
-}
 .footer-contact-from .w100{
     width: 100%;
 }
 .footer-contact-from .w50{
     width: 48%
 }
-
 .footer-contact-from .default-input {
     margin-bottom: 20px;
 }
@@ -594,4 +591,15 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 }
 .footer-contact-from {
     margin-top: 60px;
+}
+
+/* ==================
+Footer 
+====================*/
+.footer {
+    padding: 20px 0;
+    margin-top: 60px;
+}
+.footer p {
+    font-size: 20px;
 }
