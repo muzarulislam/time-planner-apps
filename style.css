@@ -44,30 +44,30 @@ a{
  Header-Section 
 ===========================*/
 .header-section {
-	background-color: #fff;
-	border-bottom: 1px solid #ddd;
-	padding: 6px 0;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 99;
-	width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
 }
-.header-section a{
+.header-section a {
     color: #010101;
 }
-.header-logo{
+.header-logo {
     width: 30%;
 }
 .logo img {
-    height: 60px;
+    height: 48px;
     float: left;
     margin-right: 10px;
 }
 .logo span {
     display: inline-block;
     margin-top: 14px;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
 }
 .header-menu {
@@ -77,48 +77,69 @@ a{
     width: 14%;
     text-align: right;
 }
-.header-btn {
-	border: 2px solid #6278df;
-	display: inline-block;
-	padding: 10px 30px;
-	border-radius: 10px;
-	margin-top: 8px;
-	color: #6278df !important;
-	font-size: 17px;
-	font-weight: 600;
-}
-.primary-menu ul li{
+.primary-menu ul li {
     display: inline-block;
 }
 .primary-menu ul li a {
     display: block;
-    padding: 0 20px;
+    padding: 0 10px;
     font-size: 17px;
     line-height: 60px;
+    transition: .5s;
+}
+.primary-menu ul li a:hover {
+    color: aqua;
+}
+.header-btn {
+    border: 2px solid #6278df;
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .5s;
+}
+.header-btn a {
+    color: #6278df;
+}
+.header-btn a:hover {
+    color: #fff;
+}
+.header-btn:hover {
+    background-color: #6278df;
+    box-shadow: rgba(98, 120, 223, 2.2) 2px 1px 15px 0px;
 }
 
 /*  =======================
 Header-DropDown 
 ========================== */
-.primary-menu ul li{
+.primary-menu ul li {
     position: relative;
 }
-.primary-menu ul li ul{
+.primary-menu ul li ul {
     position: absolute;
     left: 0;
     top: 100%;
     width: 300px;
-    background: #fff;
-
+    background: #e9c0c0;
     opacity: 0;
     visibility: hidden;
     transform: scaleY(0);
     transform-origin: top center;
+    transition: .5s;
 }
-.primary-menu ul li ul li{
+.primary-menu ul li ul li:hover {
+    background-color: chocolate;
+}
+.primary-menu ul li ul li:hover a {
+    color: red;
+}
+.primary-menu ul li ul li {
     display: block;
+    border-bottom: 1px solid #ddd;
 }
-.primary-menu ul li:hover ul{
+.primary-menu ul li:hover ul {
     opacity: 1;
     visibility: visible;
     transform: scaleY(1);
@@ -144,8 +165,7 @@ Banner-Section
     top: 0;
     height: 100%;
     width: 100%;
-
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .5);
     z-index: -1;
 }
 .banner-content h3 {
@@ -178,7 +198,7 @@ Video-Content-Section
 ========================== */
 .banner-bottom{
     background: #f7f9ff;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .video-left{
     width: 48%;
@@ -187,7 +207,7 @@ Video-Content-Section
     width: 48%;
 }
 .video-content-right h3 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 400;
     margin-bottom: 35px;
 }
@@ -211,7 +231,7 @@ Video-Content-Section
 }
 .section-title p {
     color: #767676;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
 }
 .services-items {
@@ -232,7 +252,7 @@ Video-Content-Section
     width: 60px;
     float: left;
     min-height: 168px;
-    font-size: 45px;
+    font-size: 38px;
     color: #6278df;
     margin-right: 10px;
 }
@@ -242,7 +262,7 @@ Video-Content-Section
 .s-content h3 {
     font-size: 26px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .s-content p {
     color: #767676;
@@ -258,9 +278,9 @@ Pricing-Table-Section
     padding: 50px;
 }
 .section-title h2 {
-    font-size: 56px;
-    font-weight: 500;
-    margin-bottom: 30px;
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 .pricing-tables {
     margin-top: 80px;
@@ -308,13 +328,13 @@ Pricing-Table-Section
 .p-content ul li {
     margin: 25px 0;
     color: #767676;
-    font-size: 22px;
+    font-size: 18px;
 }
 .p-content ul li span {
     display: inline-block;
-    font-size: 35px;
+    font-size: 28px;
     color: #6278df;
-    width: 57px;
+    width: 40px;
 }
 .p-button{
     margin-top: 60px;
@@ -411,10 +431,6 @@ Team-Section
     color: #6278df;
     border: 2px solid #6278df;
 }
-.section-title.newslatter-title h2 {
-    margin-top: 56px;
-    font-size: 44px;
-}
 
 
 /* =============================
@@ -478,6 +494,10 @@ Testimonial-Section
 .testimonial-items{
     margin-top: 100px;
 }
+.section-title.newslatter-title h2 {
+    margin-top: 10px;
+    font-size: 44px;
+}
 .i-item{
     width: 32%;
     margin-right: 2%;
@@ -491,7 +511,6 @@ Testimonial-Section
     padding: 50px 40px;
     box-sizing: border-box;
     margin-bottom: 42px;    
-
     position: relative;
 }
 .t-content::after{
@@ -509,19 +528,20 @@ Testimonial-Section
 }
 .t-content p{
     color: #767676;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8em;
     position: relative;
     margin-bottom: 0;
+    text-align: center;
 }
 .t-content p::before {
 	content: "\f10d";
-	font-family: FontAwesome;
-	font-size: 80px;
+	font: var(--fa-font-solid);
+	font-size: 85px;
 	position: absolute;
 	opacity: .15;
-	left: -17px;
-	top: -4px;
+	left: 10px;
+	top: -32px;
 }
 .t-user-bio {
     position: relative;
@@ -580,9 +600,9 @@ Sub-Footer
     height: 200px;
 }
 .content-right-form p {
-    font-size: 21px;
+    font-size: 18px;
     color: #767676;
-    line-height: 1.8em;
+    line-height: 1.6em;
 }
 .content-right-form h4 {
     font-size: 25px;
@@ -601,5 +621,5 @@ Footer
     margin-top: 60px;
 }
 .footer p {
-    font-size: 20px;
+    font-size: 16px;
 }
